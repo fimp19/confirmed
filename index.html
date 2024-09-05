@@ -23,6 +23,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -73,8 +76,46 @@
 <section style="background-color: rgb(32,32,32);" id="about">
 <div class="container">
         <h2 class="about-us">Who Are We</h2>
-        <p class="about-uss">Welcome to the best website fixedmatch.site for selling fixed football matches. We know what you need for you, our company works with the most reliable foreign sources our foreign experts are all around the clubs, every result is accurate. No chance to make a mistake with us here! Collaborate with a secure service for selling fixed matches. You can be our customer at any time and cooperate with us, We are here for you 24/7 We are very serious and we want our clients to be serious. So if you want to be our customer, be serious and stick to our contract Our games have a fixed price and are not offered for free, we receive thousands of messages every day requesting us for free fixed matches, but this is not possible as daily FIXED MATCHES come from us purchased from our newsletters and then resold.</p>
+        <p class="about-uss">Welcome to the best website ALAYOFIXEDMATCH for selling fixed football matches. We know what you need for you, our company works with the most reliable foreign sources our foreign experts are all around the clubs, every result is accurate. No chance to make a mistake with us here! Collaborate with a secure service for selling fixed matches. You can be our customer at any time and cooperate with us, We are here for you 24/7 We are very serious and we want our clients to be serious. So if you want to be our customer, be serious and stick to our contract Our games have a fixed price and are not offered for free, we receive thousands of messages every day requesting us for free fixed matches, but this is not possible as daily FIXED MATCHES come from us purchased from our newsletters and then resold.</p>
 
+        <div class="join">
+          <h2 class="join-down">Get Started with Simple Steps</h2>
+
+          <div class="how">
+            <div class="howw">
+              <div>
+                <i class="fa-solid fa-registered fa-beat-fade" style="color: #019fff;" id="icon"></i>
+              </div>
+
+              <div id="howww">
+              <h3>Register</h3>
+              <p>Register now to unlock expert sports predictions, thrilling gaming options, and exclusive bonuses. Get started in just a few clicks!"</p>
+            </div>
+            </div>
+
+            <div class="howw">
+              <div>
+                <i class="fa-solid fa-inbox fa-beat-fade" style="color: #019fff;" id="icon"></i>
+              </div>
+              <div id="howww" >
+              <h3>Get your tips via email</h3>
+              <p>Receive expert sports tips directly in your inbox. Stay ahead with personalized predictions and updates sent straight to your email</p>
+            </div>
+
+            </div>
+            <div class="howw">
+              <div>
+                <i class="fa-solid fa-hand-holding-dollar fa-beat-fade" style="color: #019fff;" id="icon"></i>
+              </div>
+              <div id="howww">
+              <h3>Place a bet & win</h3>
+              <p>Place your bets with confidence and watch your winnings grow. Experience the thrill of winning big with every game!</p>
+            </div>
+            </div>
+
+          </div>
+
+        </div>
         
 </div>
 </section>
@@ -165,7 +206,7 @@
 
         <div class="mother">
             <div class="left">
-                <h3>PACKAGE <br> TWO</h3>
+              <h3 id="packOne">PACKAGE <br> TWO</h3>
             </div>
             <div class="middle">
             <p>Price $50</p>
@@ -182,7 +223,7 @@
 
         <div class="mother">
             <div class="left">
-                <h3>PACKAGE <br> THREE</h3>
+              <h3 id="packOne">PACKAGE <br> THREE</h3>
             </div>
             <div class="middle">
             <p>Price $150</p>
@@ -415,7 +456,10 @@
 </section>
 
 <section id="contact">
-        <h2>Contact Us</h2>
+  <div class="container">
+  <h3>
+    Have questions or need assistance? <br> Our dedicated support team is here to help.  Reach out to us anytime, and we'll get back to you promptly.
+  </h3>
         <form action="submit_form.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -425,17 +469,23 @@
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Send</button>
         </form>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Alayo Fixed Match. All rights reserved.</p>
+      <div class="container">
+        <div class="footerdiv">
+        <p>alayofixedmatch@gmail.com</p>
+        <img src="./images/alayo 2.png" alt="" id="footer-logo">
+        <p>United Kingdom</p>
+      
     </footer>
 
 
 
 
     <script>
-        // script.js
+      
 document.querySelectorAll('.service button').forEach(button => {
     button.addEventListener('click', () => {
         alert('Thank you for your interest! This feature is currently under development.');
