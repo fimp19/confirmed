@@ -52,11 +52,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 5em;
+    flex-direction: row;
 }
 #nav-bar{
     gap: 50px;
     height: 11vh;
     background-color: #019fff;
+   
 }
 #nav-text{
     gap: 40px;
@@ -86,6 +88,44 @@ select {
    gap: 20px;
  
 }
+#nav-now{
+    display: none;
+}
+#myList {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+#myList li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+}
+
+@media screen and (max-width: 770px) {
+    #nav-bar{
+        display: none;
+    }
+    #logo2{
+        width: 75px;
+    }
+    #nav-now{
+        display: block;
+        /* height: 10vh; */
+        background-color: #019fff;
+    }
+    #yes{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+   
+}
+
 #home{
     background-image: url(./images/players.jpg);
     background-repeat: no-repeat;
@@ -163,7 +203,7 @@ select {
     }
 }
 #logo{
-    width: 85px
+    width: 80px
 }
 
 @media screen and (max-width: 1015px) {
@@ -200,7 +240,7 @@ select {
         display: none;
     }
     #logo{
-        width: 65px
+        width: 75px
     }
   }
   @media screen and (max-width: 768px) {
@@ -306,6 +346,27 @@ select {
         display: none;
     } 
   }
+
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    margin-top: 13px;
+    width: 36px;
+    /* height: 30px; */
+}
 
 #about{
     padding: 10px 0px;
@@ -461,7 +522,6 @@ select {
         .how{
             flex-wrap: wrap;
         }
-
     }
     @media screen and (max-width: 1015px) {
         .join-down{
@@ -834,7 +894,7 @@ select {
     background-color: rgb(32,32,32);
     border: thin solid black;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
 }
 .recent-winning h2{
     font-size: 2.3em;
@@ -917,30 +977,138 @@ select {
     }
 }
 
-/* .floating-buttons {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#video-con{
+    position: relative;
+    margin-top: 90px;
+    align-items: center;
+ 
 }
-.floating-buttons .btn {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.myV{
+ position: relative;
+ left: 25em;
+ width: 20em;
+
+}
+.play-button {
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    font-size: 16px;
+}
+.play-button::before {
+    content: '▶'; 
+    font-size: 60px;
+    color: white;
+}
+@media screen and (max-width: 1027px) {
+    .myV{
+        position: relative;
+        left: 20em;
+        width: 20em;
+       
+       }
+}
+@media screen and (max-width: 914px) {
+    .myV{
+        position: relative;
+        left: 14em;
+        width: 18em;
+       }
+}
+@media screen and (max-width: 767px) {
+    .myV{
+        position: relative;
+        left: 9em;
+        width: 18em;
+       }
+}
+@media screen and (max-width: 517px) {
+    .myV{
+        position: relative;
+        left: 4em;
+        width: 16em;
+       }
+}
+@media screen and (max-width: 375px) {
+    .myV{
+        position: relative;
+        left: 4em;
+        width: 14em;
+       }
 }
 
-.floating-buttons .btn:hover {
-    background-color: #0056b3;
-} */
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .video-slider {
+    flex: 1;
+    position: relative;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .video-container {
+    position: relative;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-image: url('play-icon.png'); /* Use your own play icon here */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .play-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Hide the button when the video is playing */
+  video.playing ~ .play-button {
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .video-slider, .text-content {
+      width: 100%;
+    }
+  }
+  
+ 
+  
+  
+
+
 
 .customer-review{
     background-color: black;
@@ -1415,3 +1583,4 @@ footer {
     }
 
 }
+
