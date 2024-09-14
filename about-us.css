@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.top-top{
+    background-color: black;
+    height: 5vh;
+}
+#top{
+    top: 0;
+    text-align: center;
+    padding: 1px;
+    justify-content: center;
+   
+}
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* background-color: black; */
+  }
+  
+  .marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translate(10, 0); }
+    100% { transform: translate(-100%, 0); }
+  }
+  
+#top-text{
+    font-size: 18px;
+    color: white;
+    font-family: "Ubuntu", system-ui;
+    font-weight: 700;
+     font-style: normal;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    flex-direction: row;
+}
+#nav-bar{
+    gap: 50px;
+    height: 11vh;
+    background-color: #019fff;
+   
+}
+#nav-text{
+    gap: 40px;
+}
+a{
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+#tag{
+    color: white;
+}
+#tag:hover{
+    color: black;
+}
+
+.language-selector {
+    margin: 100px;
+}
+
+select {
+    padding: 10px;
+    font-size: 15px;
+}
+#me{
+   align-items: center;
+   gap: 20px;
+ 
+}
+#nav-now{
+    display: none;
+}
+#myList {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+#myList li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+}
+
+@media screen and (max-width: 770px) {
+    #nav-bar{
+        display: none;
+    }
+    #logo2{
+        width: 75px;
+    }
+    #nav-now{
+        display: block;
+        /* height: 10vh; */
+        background-color: #019fff;
+    }
+    #yes{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+   
+}
+
+#home{
+    background-image: url(./images/players.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    background-color: #000000;
+}
+
+.hero-section {
+    /* background: linear-gradient(135deg, #019fff 50%, #17a2b8 50%); */
+    color: black;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 50px;   
+}
+
+.hero-section h2 {
+    margin: 0;
+    font-size: 4.8em;
+    text-shadow: 5px 5px #000000;
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+#front{
+    font-size: 1.5em;
+    color: rgb(1,159,255);
+}
+.hero-section button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: yellowgreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Ubuntu", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    border-radius: 30px;
+    
+}
+
+.hero-section button:hover {
+    background-color: #009acd;
+}
+
+.bouncing-buttons .btn {
+    background-color: rgb(164,210,70);
+    color: black;
+    padding: 35px 35px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 28px;
+    animation: bounce 3s infinite; /* Bouncing animation */
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+#logo{
+    width: 80px
+}
+
+@media screen and (max-width: 1015px) {
+    .hero-section h2 {
+        margin: 0;
+        font-size: 4.3em;
+        text-shadow: 5px 5px #000000;
+        font-family: "Ubuntu", system-ui;
+        font-weight: 500;
+        font-style: normal;
+        color: white;
+        text-align: center;
+    }
+    .bouncing-buttons .btn {
+        background-color: rgb(164,210,70);
+        color: black;
+        padding: 25px 25px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 20px;
+        animation: bounce 3s infinite; /* Bouncing animation */
+    }
+    #front{
+        font-size: 1em;
+    }
+    #nav-bar{
+        gap: 50px;
+        /* height: 11vh; */
+        background-color: #019fff;
+    }
+    .language-selector{
+        display: none;
+    }
+    #logo{
+        width: 75px
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .hero-section h2 {
+        margin: 0;
+        font-size: 3em;
+        text-shadow: 5px 5px #000000;
+        font-family: "Ubuntu", system-ui;
+        font-weight: 500;
+        font-style: normal;
+        color: white;
+        text-align: center;
+    }
+    .bouncing-buttons .btn {
+        background-color: rgb(164,210,70);
+        color: black;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 15px;
+        animation: bounce 3s infinite; /* Bouncing animation */
+    }
+    #front{
+        font-size: 1em;
+    }
+    #nav-bar{
+        gap: 50px;
+        height: 11vh;
+        background-color: #019fff;
+    }
+    .language-selector{
+        display: none;
+    } 
+  }
+
+  @media screen and (max-width: 548px) {
+    .hero-section h2 {
+        margin: 0;
+        font-size: 2em;
+        text-shadow: 5px 5px #000000;
+        font-family: "Ubuntu", system-ui;
+        font-weight: 500;
+        font-style: normal;
+        color: white;
+        text-align: center;
+    }
+    .bouncing-buttons .btn {
+        background-color: rgb(164,210,70);
+        color: black;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10px;
+        animation: bounce 3s infinite; /* Bouncing animation */
+    }
+    #front{
+        font-size: 1em;
+    }
+    #nav-bar{
+        gap: 50px;
+        height: 11vh;
+        background-color: #019fff;
+    }
+    .language-selector{
+        display: none;
+    } 
+  }
+  @media screen and (max-width: 375px) {
+    .hero-section h2 {
+        margin: 0;
+        font-size: 1.7em;
+        text-shadow: 3px 3px #000000;
+        font-family: "Ubuntu", system-ui;
+        font-weight: 500;
+        font-style: normal;
+        color: white;
+        text-align: center;
+    }
+    .bouncing-buttons .btn {
+        background-color: rgb(164,210,70);
+        color: black;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10px;
+        animation: bounce 3s infinite; /* Bouncing animation */
+    }
+    #front{
+        font-size: 1.1em;
+    }
+    #nav-bar{
+        gap: 50px;
+        height: 11vh;
+        background-color: #019fff;
+    }
+    .language-selector{
+        display: none;
+    } 
+  }
+
+  .first{
+    background-color: black;
+    padding: 80px;
+  }
+
+  #up{
+    font-size: 3em;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    
+  }
+
+  .counter-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+
+.counter-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 20px;
+}
+
+.counter-box h2 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+}
+
+.counter-box h1 {
+    font-size: 4em;
+    color: #ff6b6b;
+    font-family: "Protest Guerrilla", sans-serif;
+    margin: 0;
+}
+
+
+@media (max-width: 1072px) {
+    .counter-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 100px;
+    }
+    .counter-box h1 {
+        font-size: 2.5em; 
+    }
+    .counter-box h2 {
+        font-size: 1.5em;  
+    }
+}
+@media (max-width: 790px) {
+    #up{
+        font-size: 2em;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        text-align: center;
+        
+      }
+    .counter-box h1 {
+        font-size: 2em; 
+    }
+
+    .counter-box h2 {
+        font-size: 1.2em; 
+    }
+    .counter-container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    #up{
+        font-size: 2em;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        text-align: center;
+        
+      }
+    .counter-box h1 {
+        font-size: 2em; 
+    }
+
+    .counter-box h2 {
+        font-size: 1.2em; 
+    }
+    .counter-container {
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media (max-width: 414px) {
+    #up{
+        font-size: 1.5em;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    .counter-box h1 {
+        font-size: 2em; 
+    }
+
+    .counter-box h2 {
+        font-size: 1.2em; 
+    }
+    .counter-container {
+        padding: 0 5px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+#last{
+    padding-bottom: 70px;
+}
+#value-text{
+    font-size: 3em;
+    color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    padding-top: 30px;
+    text-align: center;
+
+
+}
+.under{
+    display: flex;
+    justify-content: space-between;
+}
+.top{
+    width:40px;
+    border: thin solid black;
+    padding: 130px;
+}
