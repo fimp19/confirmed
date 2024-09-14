@@ -491,3 +491,43 @@ select {
     border: thin solid black;
     padding: 130px;
 }
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.flex-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.flex-item img {
+    border-radius: 15px;
+}
+
+.flex-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+ 
+    .flex-item {
+        margin: 20px 0;
+    }
+}
