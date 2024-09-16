@@ -27,6 +27,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -96,7 +98,7 @@
 
 <section style="background-color: rgb(32,32,32);" id="about">
 <div class="container">
-        <h2 class="about-us">Who Are We</h2>
+        <h2 class="about-us">Who Are We ?</h2>
         <p class="about-uss">Welcome to the best website HUNTERTIPS for selling fixed football matches. We know what you need for you, our company works with the most reliable foreign sources our foreign experts are all around the clubs, every result is accurate. No chance to make a mistake with us here! Collaborate with a secure service for selling fixed matches. You can be our customer at any time and cooperate with us, We are here for you 24/7 We are very serious and we want our clients to be serious. So if you want to be our customer, be serious and stick to our contract Our games have a fixed price and are not offered for free, we receive thousands of messages every day requesting us for free fixed matches, but this is not possible as daily FIXED MATCHES come from us purchased from our newsletters and then resold.</p>
 
         <div class="join">
@@ -342,9 +344,33 @@
         </div>
     </div>
 </div>
-
-
 </section>
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+  <div class="counter-section">
+      <div class="counter-container">
+          
+          <div class="counter-box">
+              <h2>Members</h2>
+              <h1 id="counter1">0 <sub style="color: black;">2</sub> </h1>
+          </div>
+
+         
+          <div class="counter-box">
+              <h2>Years of Experience</h2>
+              <h1 id="counter2">0</h1>
+          </div>
+
+          
+          <div class="counter-box">
+              <h2>Tips Won</h2>
+              <h1 id="counter3">0</h1>
+          </div>
+      </div>
+  </div>
+</div>
+
+
 <!-- ----------------------------------------------------------------- -->
 <section class="customer-review" id="cont">
     <div class="container" >
@@ -508,9 +534,29 @@
     <footer>
       <div class="container">
         <div class="footerdiv">
-        <p>huntertips@gmail.com</p>
         <img src="./images/hunter.png" alt="" id="footer-logo">
-        <p>United Kingdom</p>
+        
+        </div>
+
+        <div class="bottom">
+          <p>HOME</p>
+          <P>ABOUT-US</P>
+          <p>FAQ</p>
+          <p>CONTACT-US</p>
+        </div>
+        
+
+        <div class="last-under">
+        <div class="leftt">
+          <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></p>
+          <p class="pt">huntertips@gmail.com</p>
+        </div>
+        <div class="rightt">
+          <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></p>
+          <p class="pt">united states</p>
+        </div>
+      </div>
+    </div>
       
     </footer>
 
@@ -563,6 +609,52 @@ document.querySelectorAll('.service button').forEach(button => {
         myList.style.display = "none";
     }
 });
+// ----------------------------------------------
+// Function to create and manage each counter
+function createCounter(elementId, startValue, incrementValue, maxValue, intervalTime) {
+    const counterElement = document.getElementById(elementId);
+    let count = startValue;
+
+    const interval = setInterval(() => {
+        count += incrementValue;
+        counterElement.textContent = count.toLocaleString(); 
+
+        if (count >= maxValue) {
+            counterElement.textContent = maxValue.toLocaleString();  
+            clearInterval(interval);
+        }
+    }, intervalTime);
+}
+
+// Intersection Observer callback
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            
+            createCounter('counter1', 0, 50, 5460, 20); 
+            createCounter('counter2', 0, 1, 10, 50);  
+            createCounter('counter3', 0, 50, 9851, 20);  
+
+            
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+const options = {
+    root: null,  
+    threshold: 0.5  
+};
+
+// Create a new Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, options);
+
+// Observe the section that contains the counters
+const counterSection = document.querySelector('.counter-section');
+observer.observe(counterSection);
+
+
+
 </script>
 
 

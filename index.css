@@ -313,6 +313,7 @@ select {
     } 
   }
   @media screen and (max-width: 375px) {
+    
     .hero-section h2 {
         margin: 0;
         font-size: 1.7em;
@@ -1318,6 +1319,122 @@ select {
 
 
 }
+.counter-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.counter-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 20px;
+}
+
+.counter-box h2 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+}
+
+.counter-box h1 {
+    font-size: 4em;
+    color: #ff6b6b;
+    font-family: "Protest Guerrilla", sans-serif;
+    margin: 0;
+}
+
+
+@media (max-width: 1072px) {
+    .counter-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 100px;
+    }
+    .counter-box h1 {
+        font-size: 2.5em; 
+    }
+    .counter-box h2 {
+        font-size: 1.5em;  
+    }
+}
+@media (max-width: 790px) {
+    #up{
+        font-size: 2em;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        text-align: center;
+        
+      }
+    .counter-box h1 {
+        font-size: 2em; 
+    }
+
+    .counter-box h2 {
+        font-size: 1.2em; 
+    }
+    .counter-container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    #up{
+        font-size: 2em;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        text-align: center;
+        
+      }
+    .counter-box h1 {
+        font-size: 2em; 
+    }
+
+    .counter-box h2 {
+        font-size: 1.2em; 
+    }
+    .counter-container {
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media (max-width: 414px) {
+    #up{
+        font-size: 1.5em;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    .counter-box h1 {
+        font-size: 2em; 
+    }
+
+    .counter-box h2 {
+        font-size: 1.2em; 
+    }
+    .counter-container {
+        padding: 0 5px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
     
 #FAQ{
     margin-top: 20px;
@@ -1500,20 +1617,53 @@ footer {
     font-size: 1.2em;
 }
 #footer-logo{
-    width:6em;
+    width:5em;
+    padding-bottom: 30px;
 }
 .footerdiv{
     display: flex;
-    justify-content: space-evenly;
+    gap:20px;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
-.footerdiv p{
-    color:white;
-    font-size: 1em;
-    font-family: "Roboto Condensed", system-ui;
-    font-weight: 800;
+.bottom{
+    display: flex;
+    /* border: thin solid white; */
+    padding: 10px;
+    justify-content: center;
+    gap: 30px;
+}
+.bottom p{
+    font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
+    color: white;
+    font-size: 22px;
+}
+.footerdiv h2{
+    font-size: 2em;
+    color: white;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: yellow;
+}
+.last-under{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: thin solid white; */
+    gap: 40px;
+}
+.leftt{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.rightt{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
 }
 @media screen and (max-width: 990px) {
     
@@ -1581,6 +1731,46 @@ footer {
         font-weight: 800;
         font-style: normal;
     }
+
+}
+@media screen and (max-width: 990px) {
+    .bottom{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        gap: 30px;
+    }
+    .bottom p{
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        color: white;
+        font-size: 17px;
+    }
+    .last-under{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .leftt{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .pt{
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        color: white;
+        font-size: 17px;
+    }
+    .rightt{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
 
 }
 

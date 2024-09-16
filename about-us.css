@@ -531,3 +531,170 @@ select {
         margin: 20px 0;
     }
 }
+footer {
+    background-color: black ;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+#footer-logo{
+    width:5em;
+    padding-bottom: 30px;
+}
+.footerdiv{
+    display: flex;
+    gap:20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.bottom{
+    display: flex;
+    /* border: thin solid white; */
+    padding: 10px;
+    justify-content: center;
+    gap: 30px;
+}
+.bottom p{
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 22px;
+}
+.footerdiv h2{
+    font-size: 2em;
+    color: white;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: yellow;
+}
+.last-under{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: thin solid white; */
+    gap: 40px;
+}
+.leftt{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.rightt{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+@media screen and (max-width: 990px) {
+    
+#contact h3{
+    padding-top: 30px;
+    color: #ff6347;
+    text-align: center;
+    font-size: 2.8em;
+    padding-bottom: 10px;
+    font-family: "Roboto Condensed", system-ui;
+    font-weight: 800;
+    font-style: normal;
+}
+}
+@media screen and (max-width: 570px) {
+    #contact h3{
+        padding-top: 30px;
+        color: #ff6347;
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 10px;
+        font-family: "Roboto Condensed", system-ui;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .footerdiv p{
+        color:white;
+        font-size: 0.8em;
+        font-family: "Roboto Condensed", system-ui;
+        font-weight: 800;
+        font-style: normal;
+    }
+    #footer-logo{
+        width:5em;
+    }
+
+}
+@media screen and (max-width: 414px) {
+    #footer-logo{
+        width:3em;
+    }
+    #contact h3{
+        padding-top: 30px;
+        color: #ff6347;
+        text-align: center;
+        font-size: 1.6em;
+        padding-bottom: 10px;
+        font-family: "Roboto Condensed", system-ui;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    #footer-logo{
+        width:2em;
+    }
+    #contact h3{
+        padding-top: 30px;
+        color: #ff6347;
+        text-align: center;
+        font-size: 1.3em;
+        padding-bottom: 10px;
+        font-family: "Roboto Condensed", system-ui;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+}
+@media screen and (max-width: 990px) {
+    .bottom{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        gap: 30px;
+    }
+    .bottom p{
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        color: white;
+        font-size: 17px;
+    }
+    .last-under{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .leftt{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .pt{
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        color: white;
+        font-size: 17px;
+    }
+    .rightt{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+
+}
+
+
