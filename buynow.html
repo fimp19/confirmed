@@ -101,7 +101,7 @@
       <!-- Buttons for WhatsApp, Email, and Google Voice -->
       <button class="modal-button" id="whatsapp-button">Proceed with WhatsApp</button>
       <button class="modal-button" id="email-button">Proceed with Email</button>
-      <button class="modal-button" id="google-voice-button">Proceed with Google Voice</button>
+      <button class="modal-button" id="google-chat-button">Proceed with Google Chat</button>
     </div>
   </div>
         </form>
@@ -243,8 +243,8 @@ const modal = document.getElementById('paymentModal');
       window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
 
-    // Google Voice button click event
-    document.getElementById('google-voice-button').addEventListener('click', function() {
+    // Google Chat button click event
+    document.getElementById('google-chat-button').addEventListener('click', function() {
       const selectedPaymentMethod = document.querySelector('input[name="payment_method"]:checked');
       
       if (!selectedPaymentMethod) {
@@ -253,10 +253,13 @@ const modal = document.getElementById('paymentModal');
       }
       
       const paymentMethod = selectedPaymentMethod.value;
-      const phoneNumber = '1234567890'; // Replace with your Google Voice number
+      const chatRecipient = 'youremail@gmail.com'; // Replace with the recipient's Google account email
       
-      const telURL = `tel:${phoneNumber}`;
-      window.location.href = telURL;
+      // Use the Google Chat URL to start a chat
+      const chatURL = `https://mail.google.com/chat/u/0/#chat/welcome/${chatRecipient}`;
+      
+      // Redirect to Google Chat
+      window.location.href = chatURL;
     });
 
 </script>
