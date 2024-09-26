@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUY NOW</title>
     <link rel="stylesheet" href="buynow.css">
+    <link rel="icon" type="image" href="./images/hunter.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -251,7 +252,7 @@ const modal = document.getElementById('paymentModal');
       }
       
       const paymentMethod = selectedPaymentMethod.value;
-      const phoneNumber = '1234567890'; // Replace with actual phone number
+      const phoneNumber = '+18142638531'; 
       const message = `Hello, I would like to proceed with payment via ${paymentMethod}.`;
       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       window.location.href = whatsappURL;
