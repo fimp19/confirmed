@@ -49,7 +49,7 @@
   <a style="text-decoration: none;" href="./about-us.html"><li>About-us</li></a>
   <a style="text-decoration: none;" href="./pricing.html"><li>Pricing</li></a>
   <a style="text-decoration: none;" href="./faq.html"><li>FAQ</li></a>
-  <a style="text-decoration: none;" href=""><li>CONTACT-US</li></a>
+  <a style="text-decoration: none;" href="./contactus.html"><li>CONTACT-US</li></a>
 </ul>
 </nav>
 
@@ -65,7 +65,7 @@
         <a class="nav-item nav-link active" href="./about-us.html" id="tag">About Us</a>
         <a class="nav-item nav-link active" href="./pricing.html" id="tag">Pricing</a>
         <a class="nav-item nav-link active" href="./faq.html" id="tag"> FAQ</a>
-        <a class="nav-item nav-link active" href="#" id="tag">Contact Us</a>
+        <a class="nav-item nav-link active" href="./contactus.html" id="tag">Contact Us</a>
       </div>
     </div>
     <div class="language-selector">
@@ -523,7 +523,27 @@
   <h3>
     Have questions or need assistance? <br> Our dedicated support team is here to help.  Reach out to us anytime, and we'll get back to you promptly.
   </h3>
-        <form action="submit_form.php" method="post">
+  <div class="container">
+    <form action="https://formsubmit.co/hunterstipssuport@gmail.com" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="successMessage" style="display:none;">
+        <p>Thank you! Your message has been sent.</p>
+    </div>
+</div>
+        <!-- <form action="submit_form.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -531,7 +551,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Send</button>
-        </form>
+        </form> -->
       </div>
     </section>
 
