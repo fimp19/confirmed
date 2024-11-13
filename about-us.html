@@ -42,15 +42,18 @@
     <nav  class="navbar-brand" id="nav-now">
       <div class="container" id="yes">
       <img id="logo2" src="./images/./hunter.png" alt="">
-      <div style="border: thin solid black; padding: 9px; border-radius: 10px;"><a id="toggle-btn" href=""><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></a></div>
+      <div style="border: thin solid black; padding: 9px; border-radius: 10px; display: none;"><a id="toggle-btn" href=""><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></a></div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </div>
     
-    <ul id="myList">
-      <li>About-us</li>
-      <li>Pricing</li>
-      <li>FAQ</li>
-      <li>Contact-Us</li>
-    </ul>
+   <!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+    <a href="./index.html">Home</a>
+    <a href="./about-us.html">About - us</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
     </nav>
     
     <nav class="navbar navbar-expand-lg navbar-light"  id="nav-bar">
@@ -168,6 +171,17 @@
 
 
       <script>
+
+function toggleMenu() {
+  const sideMenu = document.getElementById("sideMenu");
+  if (sideMenu.style.width === "250px") {
+    sideMenu.style.width = "0";
+  } else {
+    sideMenu.style.width = "250px";
+  }
+}
+
+
             const toggleBtn = document.getElementById('toggle-btn');
   const myList = document.getElementById('myList');
 
