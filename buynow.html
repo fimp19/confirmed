@@ -131,87 +131,13 @@
       <button class="modal-button" id="email-button">Proceed with Email</button>
       <button class="modal-button" id="google-chat-button">Proceed with Text</button>
     </div>
+    </div>
   </div>
         </form>
       </section>
 
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
+  
 <script>
-//     document.getElementById('whatsapp-button').addEventListener('click', function() {
-//   // Get the selected payment method
-//   const selectedPaymentMethod = document.querySelector('input[name="payment_method"]:checked');
-
-//   if (!selectedPaymentMethod) {
-//     alert("Please select a payment method.");
-//     return;
-//   }
-
-//   // The selected value (payment method)
-//   const paymentMethod = selectedPaymentMethod.value;
-
-//   // Phone number to redirect on WhatsApp (make sure the number starts with country code without '+')
-//   const phoneNumber = '1234567890'; // Replace with the actual phone number
-
-//   // WhatsApp message
-//   const message = `Hello, I would like to proceed with payment via ${paymentMethod}.`;
-
-//   // Encode the message for URL
-//   const encodedMessage = encodeURIComponent(message);
-
-//   // Construct the WhatsApp URL
-//   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-//   // Redirect to WhatsApp
-//   window.location.href = whatsappURL;
-// });
-
- // WhatsApp button click event
-//  document.getElementById('whatsapp-button').addEventListener('click', function() {
-//       const selectedPaymentMethod = document.querySelector('input[name="payment_method"]:checked');
-      
-//       if (!selectedPaymentMethod) {
-//         alert("Please select a payment method.");
-//         return;
-//       }
-      
-//       const paymentMethod = selectedPaymentMethod.value;
-//       const phoneNumber = '1234567890'; 
-//       const message = `Hello, I would like to proceed with payment via ${paymentMethod}.`;
-//       const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      
-//       window.location.href = whatsappURL;
-//     });
-
-//     document.getElementById('email-button').addEventListener('click', function() {
-//       const selectedPaymentMethod = document.querySelector('input[name="payment_method"]:checked');
-      
-//       if (!selectedPaymentMethod) {
-//         alert("Please select a payment method.");
-//         return;
-//       }
-      
-//       const paymentMethod = selectedPaymentMethod.value;
-//       const recipientEmail = 'hunterstipssupport@gmail.com'; 
-//       const subject = 'Payment via ' + paymentMethod;
-//       const body = `Hello,\n\nI would like to proceed with payment via ${paymentMethod}. Please provide the necessary details.`;
-
-//       window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-//     });
-
 // Get the modal element
 function goBack() {
     window.history.back();
@@ -285,14 +211,15 @@ const modal = document.getElementById('paymentModal');
       }
       
       const paymentMethod = selectedPaymentMethod.value;
-      const chatRecipient = 'hunterstipssuport@gmail.com'; // Replace with the recipient's Google account email
+      const chatRecipient = 'hunterstipssuport@gmail.com';
       
-      // Use the Google Chat URL to start a chat
       const chatURL = `https://mail.google.com/chat/u/0/#chat/welcome/${chatRecipient}`;
       
-      // Redirect to Google Chat
       window.location.href = chatURL;
+
     });
+
+    
 
 </script>
 
