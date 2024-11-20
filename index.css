@@ -663,9 +663,9 @@ select {
         }
     }
     
-    .glow {
+    /* .glow {
         animation: glowPulse 2s infinite alternate;
-    }
+    } */
     
 
 #basket-background{
@@ -821,6 +821,41 @@ select {
         padding-left: 15px;
         line-height: 1;
     }
+    .free-trial {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
+        padding-bottom: 9px;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
 }
 
 @media screen and (max-width: 414px) {
@@ -887,6 +922,41 @@ select {
         padding-left: 15px;
         line-height: 1;
     }  
+    .free-trial {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
+        padding-bottom: 9px;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
 }
 @media screen and (max-width: 1015px) {
     .mother{
@@ -914,7 +984,41 @@ select {
         background-color: black;
     
     }
-    
+    .free-trial {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
+        padding-bottom: 9px;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
 }
 @media screen and (max-width: 992px) {
     #plan-text{
@@ -981,6 +1085,41 @@ select {
         padding-left: 15px;
         line-height: 1;
     }  
+    .free-trial {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
+        padding-bottom: 9px;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
 
 }
 
