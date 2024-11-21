@@ -458,7 +458,35 @@ select {
     font-style: normal;
     line-height: 50px;
 }
-@media screen and (max-width: 375px) {
+/* ----------------------------------------------------- */
+.glow{
+    animation: glowPulse 2s infinite alternate;
+    }
+@keyframes glowPulse {
+    0% {
+        text-shadow: 
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+    }
+}
+/* ---------------------------------------------------- */
+@media screen and (max-width:375px) {
     .about-us{
         color: rgb(1,159,255);
         text-align: center;
@@ -477,6 +505,33 @@ select {
         font-style: normal;
         line-height: 10px;
     }
+.glow{
+    animation: glowPulse 2s infinite alternate;
+    }
+@keyframes glowPulse {
+    0% {
+        text-shadow: 
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+    }
+}
+
 }
     @media screen and (max-width: 414px) {
         .about-us{
@@ -497,6 +552,34 @@ select {
             font-style: normal;
             line-height: 30px;
         }
+        /* ----------------------------------------------------- */
+.glow{
+    animation: glowPulse 2s infinite alternate;
+    }
+@keyframes glowPulse {
+    0% {
+        text-shadow: 
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+    }
+}
+/* ---------------------------------------------------- */
 }
 
 .join{
@@ -639,34 +722,7 @@ select {
 
     }
 
-    @keyframes glowPulse {
-        0% {
-            text-shadow: 
-                0 0 5px #0ff,
-                0 0 10px #0ff,
-                0 0 20px #0ff,
-                0 0 40px #0ff;
-        }
-        50% {
-            text-shadow: 
-                0 0 10px #0ff,
-                0 0 20px #0ff,
-                0 0 40px #0ff,
-                0 0 80px #0ff;
-        }
-        100% {
-            text-shadow: 
-                0 0 5px #0ff,
-                0 0 10px #0ff,
-                0 0 20px #0ff,
-                0 0 40px #0ff;
-        }
-    }
-    
-    /* .glow {
-        animation: glowPulse 2s infinite alternate;
-    } */
-    
+
 
 #basket-background{
     background-image: url(./images/run.jpg);
@@ -778,6 +834,43 @@ select {
         border-radius: 10px;
         align-items: center;
     }
+    .free-trial {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
+        padding-bottom: 9px;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    
+    
     .mother{
         display: none;
     }
@@ -821,41 +914,6 @@ select {
         padding-left: 15px;
         line-height: 1;
     }
-    .free-trial {
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
-        background-size: 300% 300%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
-        padding-bottom: 9px;
-      }
-      
-      @keyframes gradient-animation {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-      @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-          transform: translateY(0);
-        }
-        40% {
-          transform: translateY(-20px);
-        }
-        60% {
-          transform: translateY(-10px);
-        }
-      }
 }
 
 @media screen and (max-width: 414px) {
@@ -879,6 +937,42 @@ select {
         border-radius: 10px;
         align-items: center;
     }
+    .free-trial {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
+        padding-bottom: 9px;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    
     .mother{
         display: none;
     }
@@ -922,41 +1016,6 @@ select {
         padding-left: 15px;
         line-height: 1;
     }  
-    .free-trial {
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
-        background-size: 300% 300%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
-        padding-bottom: 9px;
-      }
-      
-      @keyframes gradient-animation {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-      @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-          transform: translateY(0);
-        }
-        40% {
-          transform: translateY(-20px);
-        }
-        60% {
-          transform: translateY(-10px);
-        }
-      }
 }
 @media screen and (max-width: 1015px) {
     .mother{
@@ -971,6 +1030,42 @@ select {
         padding-top: 0;
         padding-bottom: 0;
     }
+    .free-trial {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
+        padding-bottom: 9px;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    
     .mother:hover {
         transform: scale(1.05);
     }
@@ -978,6 +1073,18 @@ select {
         text-align: center;
         color: white;
         font-size: 2em;
+        font-family: "Ubuntu", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        background-color: black;
+    
+    }    
+}
+@media screen and (max-width: 992px) {
+    #plan-text{
+        text-align: center;
+        color: white;
+        font-size: 1em;
         font-family: "Ubuntu", system-ui;
         font-weight: 400;
         font-style: normal;
@@ -1019,18 +1126,7 @@ select {
           transform: translateY(-10px);
         }
       }
-}
-@media screen and (max-width: 992px) {
-    #plan-text{
-        text-align: center;
-        color: white;
-        font-size: 1em;
-        font-family: "Ubuntu", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        background-color: black;
     
-    }
     .father{
         display: block;
         border: thin solid white;
@@ -1085,86 +1181,8 @@ select {
         padding-left: 15px;
         line-height: 1;
     }  
-    .free-trial {
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
-        background-size: 300% 300%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
-        padding-bottom: 9px;
-      }
-      
-      @keyframes gradient-animation {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-      @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-          transform: translateY(0);
-        }
-        40% {
-          transform: translateY(-20px);
-        }
-        60% {
-          transform: translateY(-10px);
-        }
-      }
 
 }
-
-/* ------------------------------------ multitext */
-.free-trial {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient-animation 3s infinite ease-in-out, bounce 2s infinite;
-    padding-bottom: 9px;
-  }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-20px);
-    }
-    60% {
-      transform: translateY(-10px);
-    }
-  }
-
-/* -------------------------------------------------------- */
-
-
-
-
 
 .recent-winning{
     background-color: rgb(32,32,32);
